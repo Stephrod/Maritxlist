@@ -27,7 +27,7 @@
 
         $.ajax({
             type: "POST",
-            url: "assets/php/form-process.php",
+            url: "stephrodwebdev@gmail.com",
             data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
             success : function(text){
                 if (text == "success"){
