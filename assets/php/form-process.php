@@ -31,8 +31,9 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-//Add your email here
-$EmailTo = "stephrodwebdev@gmail.com";
+
+$EmailTo = "example@domainname.com";
+
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -51,7 +52,7 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
